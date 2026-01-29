@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
-html.has-scroll-smooth {
-    overflow: hidden;
+/* html.has-scroll-smooth {
+    scroll-behavior: smooth;
+} */
+
+section {
+    scroll-margin-top: 20px;
 }
+
 
 html.has-scroll-dragging {
     -webkit-user-select: none;
@@ -17,7 +22,8 @@ html.has-scroll-dragging {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
