@@ -26,6 +26,9 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
+
+
+
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
         const target = link.getAttribute('href');
@@ -40,7 +43,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         }
     });
 });
-
 
 // Update ScrollTrigger when Locomotive Scroll updates
 scroll.on('scroll', ScrollTrigger.update);
