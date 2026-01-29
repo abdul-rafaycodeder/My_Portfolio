@@ -220,16 +220,110 @@ p {
     transform: translateY(30px);
 }
 
-.hero-btns {
+/* .hero-btns {
     opacity: 0;
     transform: translateY(30px);
 }
+.hero-btns button {
+     padding: ;
+} */
+
+.hero-btns {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Common button style */
+.hero-btns button,
+.hero-btns .btn {
+    
+    padding: 14px 36px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.35s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.3px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Primary button */
+.hero-btns .btn-primary,
+.hero-btns button.primary {
+    background: linear-gradient(135deg, #6C63FF, #4A42D6);
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(108, 99, 255, 0.35);
+}
+
+/* Secondary button */
+.hero-btns .btn-secondary,
+.hero-btns button.secondary {
+    background: transparent;
+    color: #6C63FF;
+    border: 2px solid #6C63FF;
+}
+
+/* Hover effects */
+.hero-btns button:hover,
+.hero-btns .btn:hover {
+    transform: translateY(-4px);
+}
+
+/* Glow hover for primary */
+.hero-btns .btn-primary:hover {
+    box-shadow: 0 18px 45px rgba(108, 99, 255, 0.5);
+}
+
+/* Secondary hover */
+.hero-btns .btn-secondary:hover {
+    background: #6C63FF;
+    color: #fff;
+}
+
+/* Active click */
+.hero-btns button:active,
+.hero-btns .btn:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+/* Mobile friendly */
+@media (max-width: 576px) {
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-btns button,
+    .hero-btns .btn {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
 
 .hero-image {
+    
+    height: fit-content;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.hero-image img{
+border-radius: 10vw;
 }
 
 .image-placeholder {
