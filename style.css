@@ -22,8 +22,7 @@ html.has-scroll-dragging {
 }
 
 body {
-    /* font-family: 'Inter', sans-serif; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -412,6 +411,9 @@ section {
 }
 
 .about-text h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
     margin-bottom: 20px;
 }
 
