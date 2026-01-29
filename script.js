@@ -26,6 +26,22 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+        const target = link.getAttribute('href');
+
+        if (target.length > 1) {
+            e.preventDefault();
+            scroll.scrollTo(target, {
+                offset: -80, // navbar height
+                duration: 900,
+                easing: [0.25, 0.00, 0.35, 1.00]
+            });
+        }
+    });
+});
+
+
 // Update ScrollTrigger when Locomotive Scroll updates
 scroll.on('scroll', ScrollTrigger.update);
 
