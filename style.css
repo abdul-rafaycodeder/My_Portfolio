@@ -506,6 +506,10 @@ section {
     transition: transform 0.5s ease;
 }
 
+.image-placeholder img{
+    height: 200px;
+}
+
 .project-card:hover .project-image .image-placeholder {
     transform: scale(1.1);
 }
