@@ -508,6 +508,26 @@ section {
 }
 
 .project-card {
+    animation: fadeIn2 1s infinite alternate ease-in-out;
+     
+}
+
+/* .project-card:hover{
+   transform: translateY(-10px);
+} */
+
+@keyframes fadeIn2 {
+    0% {
+        transform: scale(0.98);
+        opacity: 0.8;
+    }
+    100% {
+         transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.project-card {
     background: white;
     border-radius: 15px;
     overflow: hidden;
