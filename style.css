@@ -42,7 +42,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 1.2;
@@ -234,14 +237,14 @@ p {
     margin-top: 30px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* Common button style */
 .hero-btns button,
 .hero-btns .btn {
-    
+
     padding: 14px 36px;
     border-radius: 999px;
     font-size: 1rem;
@@ -319,11 +322,25 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 2s infinite alternate ease-in-out;
 }
 
-.hero-image img{
+@keyframes fadeIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+.hero-image img {
     width: 50%;
-border-radius: 1vw;
+    border-radius: 1vw;
 }
 
 .image-placeholder {
@@ -369,12 +386,19 @@ border-radius: 1vw;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     40% {
         transform: translateX(-50%) translateY(10px);
     }
+
     60% {
         transform: translateX(-50%) translateY(5px);
     }
@@ -507,7 +531,7 @@ section {
     transition: transform 0.5s ease;
 }
 
-.image-placeholder img{
+.image-placeholder img {
     height: 200px;
 }
 
@@ -696,24 +720,24 @@ section {
     h1 {
         font-size: 2.8rem;
     }
-    
+
     h2 {
         font-size: 2rem;
     }
-    
+
     .hero-section .container {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .hero-content {
         margin-bottom: 50px;
     }
-    
+
     .about-content {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
     }
@@ -723,15 +747,15 @@ section {
     .nav-links {
         display: none;
     }
-    
+
     .menu-toggle {
         display: block;
     }
-    
+
     .about-stats {
         grid-template-columns: 1fr;
     }
-    
+
     .image-placeholder {
         width: 300px;
         height: 300px;
@@ -742,13 +766,13 @@ section {
     h1 {
         font-size: 2.2rem;
     }
-    
+
     .btn-secondary {
         margin-left: 0;
         margin-top: 15px;
         display: block;
     }
-    
+
     .hero-btns {
         display: flex;
         flex-direction: column;
