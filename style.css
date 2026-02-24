@@ -531,6 +531,18 @@ section {
     transition: transform 0.5s ease;
 }
 
+.image-placeholder-project-1 img{
+    height: 180px;
+}
+
+.image-placeholder-project-4 img{
+    height: 175px;
+}
+
+.image-placeholder-project-2 img{
+    height: 190px;
+}
+
 .image-placeholder img {
     height: 200px;
 }
@@ -582,6 +594,15 @@ section {
     border-radius: 50px;
     font-size: 0.8rem;
     color: #666;
+    transition: all 0.3s ease;
+}
+
+.project-tech span:hover {
+    background: #6C63FF;
+    color: white;
+    transform: translateY(-2px);
+    cursor: pointer;
+    
 }
 
 .project-link {
